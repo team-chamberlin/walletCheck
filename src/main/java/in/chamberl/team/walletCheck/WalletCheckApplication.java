@@ -1,12 +1,15 @@
-package in.chamberl.team.walletCheck;
+package in.chamberl.team.walletcheck.crew.java;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.shell.standard.shellmethod;
+import org.springframework.shell.standard.ShellComponent;
 
-@SpringBootApplication
-public class WalletCheckApplication {
+@shellComponent
+public class crew {
 
-	public static void main(String[] args) {
-		SpringApplication.run(WalletCheckApplication.class, args);
+	@shellmethod("Crew's command.")
+	public string crew(string input)
+		return "input was:" +input;
 	}
 }
