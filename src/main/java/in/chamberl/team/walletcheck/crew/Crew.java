@@ -7,6 +7,7 @@ import org.springframework.shell.standard.ShellComponent;
 public class Crew {
 	@ShellMethod("Crew's command.")
 	public String crew(String input) {
+		int read(byte[] b)
 		return "input was:" + input;
 	}
 }
